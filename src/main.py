@@ -4,6 +4,7 @@ from model.recommender import MusicRecommender
 recommender = MusicRecommender('./src/dataset/train_reduced.csv')
 
 # Get user input
+print('\nUse genre and terms like "popularity", "loudness", "speechiness", "acousticness", "instrumentalness", "liveness", "valence" to describe the music you like\n')
 user_input = input("Enter a description of the type of music you like: ")
 
 # Get recommendations based on user input

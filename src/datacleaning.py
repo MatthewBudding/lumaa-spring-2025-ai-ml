@@ -4,7 +4,7 @@ import pandas as pd
 file_path = './src/dataset/train.csv'
 df = pd.read_csv(file_path)
 
-# Function to keep only 10 rows per genre
+# Function to keep only 5 rows per genre
 def keep_top_n_per_genre(df, n=5):
     return df.groupby('track_genre').head(n)
 
